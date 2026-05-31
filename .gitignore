@@ -19,3 +19,7 @@ yarn-error.log*
 
 .vscode/
 .kiro/
+
+portfolio_frontend/.next/
+portfolio_frontend/public/uploads/
+portfolio_frontend/.env
