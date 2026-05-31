@@ -4,10 +4,14 @@ portfolio_frontend/node_modules/
 
 # env files
 .env
+.env.*
+!.env.example
 
 # builds
 dist/
 build/
+.next/
+out/
 
 # logs
 npm-debug.log*
@@ -17,9 +21,29 @@ yarn-error.log*
 # prisma
 **/prisma/migrations/dev.db
 
+# IDE / tools
 .vscode/
 .kiro/
 
+# Next.js
 portfolio_frontend/.next/
+portfolio_frontend/out/
+
+# Uploads (stored on Cloudinary, not locally)
 portfolio_frontend/public/uploads/
+**/public/uploads/
+
+# Environment
 portfolio_frontend/.env
+portfolio_frontend/.env.*
+!portfolio_frontend/.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
